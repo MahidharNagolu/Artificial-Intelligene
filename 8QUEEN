@@ -1,7 +1,7 @@
 print("mahidhar")
 print("192111299")
-print("Enter the number of queens:")
-N=int(input())
+print ("Enter the number of queens")
+N = int(input())
 board = [[0]*N for _ in range(N)]
 def attack(i, j):
     for k in range(0,N):
@@ -23,8 +23,7 @@ def N_queens(n):
                 if N_queens(n-1)==True:
                     return True
                 board[i][j] = 0
-                return False
-
+    return False
 N_queens(N)
 for i in board:
     print (i)
