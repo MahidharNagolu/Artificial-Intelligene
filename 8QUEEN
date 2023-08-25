@@ -1,6 +1,7 @@
 print("mahidhar")
 print("192111299")
-N=8
+print("Enter the number of queens:")
+N=int(input())
 board = [[0]*N for _ in range(N)]
 def attack(i, j):
     for k in range(0,N):
